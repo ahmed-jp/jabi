@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مدونة JABI بتصميم جديد متناسق مع هوية الموقع الحديثة.">
+  <title>مدونة JABI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cur"></div>
+  <div id="cur-dot"></div>
+  <div id="progress"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="index.html#hero">
+        <span class="brand-mark"></span>
+        <span class="brand-text"><strong>JABI</strong><span>Creative Web Studio</span></span>
+      </a>
+      <button class="nav-toggle glass" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+      <nav class="nav-menu">
+        <a href="index.html#hero">الرئيسية</a>
+        <a href="index.html#about">من نحن</a>
+        <a href="index.html#services">الخدمات</a>
+        <a href="index.html#work">الأعمال</a>
+        <a href="blog.html" class="active">المدونة</a>
+        <a href="index.html#contact">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-box glass reveal">
+          <h1>مدونة JABI</h1>
+          <p>مقالات قصيرة ومفيدة عن تصميم الويب، بناء الصفحات التعريفية، وتحسين تجربة المستخدم للمشاريع الصغيرة والمتوسطة.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 10px;">
+      <div class="container grid-2 blog-grid">
+        <a class="card glass reveal" href="post1_responsive_seo.html">
+          <div class="post-thumb"><img src="pic/num1.png"></div>
+          <span class="post-tag">Responsive</span>
+          <h3>أهمية التصميم المتجاوب لتحسين الظهور الرقمي</h3>
+          <p>التجاوب ليس مجرد شكل جيد على الجوال، بل عامل مهم في إبقاء الزائر داخل الموقع وإقناعه بخدمتك.</p>
+          <span class="read-link">قراءة المقال ←</span>
+        </a>
+
+        <a class="card glass reveal" href="post2_color_psychology.html">
+          <div class="post-thumb"><img src="pic/num2.png"></div>
+          <span class="post-tag">Branding</span>
+          <h3>سيكولوجية الألوان في تصميم المواقع</h3>
+          <p>كيف تغيّر الألوان إحساس المستخدم بالموقع؟ ومتى تختار درجات هادئة أو ألواناً قوية؟</p>
+          <span class="read-link">قراءة المقال ←</span>
+        </a>
+
+        <a class="card glass reveal" href="post3_open_source_advantage.html">
+          <div class="post-thumb"><img src="pic/num3.png"></div>
+          <span class="post-tag">Open Source</span>
+          <h3>فوائد المواقع المبنية بـ HTML/CSS للشركات الصغيرة</h3>
+          <p>حل خفيف، سريع، وسهل التسليم، خاصة للمشاريع التي تحتاج موقعاً تعريفياً واضحاً وفعالاً.</p>
+          <span class="read-link">قراءة المقال ←</span>
+        </a>
+
+        <a class="card glass reveal" href="post4_landing_page_elements.html">
+          <div class="post-thumb"><img src="pic/num4.png"></div>
+          <span class="post-tag">Landing Page</span>
+          <h3>العناصر الأساسية لصفحة هبوط عالية التحويل</h3>
+          <p>من العنوان الأول حتى زر التواصل: ما الذي يجعل الصفحة تقنع الزائر وتدفعه للتفاعل؟</p>
+          <span class="read-link">قراءة المقال ←</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="currentYear"></span> JABI</p>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/966591880896" aria-label="واتساب" target="_blank" rel="noopener"><img src="icons/whatsapp_480px.png"></a>
+  <script src="script.js"></script>
+  <script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

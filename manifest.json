@@ -1,0 +1,9 @@
+{
+  "name": "JABI Creative Web Studio",
+  "short_name": "JABI",
+  "description": "واجهة تعريفية حديثة لخدمات تصميم وتطوير الويب.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#070b14"
+}

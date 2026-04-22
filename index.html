@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JABI - استوديو تصميم وتطوير مواقع إلكترونية بواجهة مستقبلية عصرية، مستوحى من أسلوب المشاريع الإبداعية التفاعلية.">
+  <meta name="keywords" content="JABI, تصميم مواقع, تطوير مواقع, واجهات مستخدم, مواقع احترافية, HTML, CSS, JavaScript">
+  <meta name="theme-color" content="#070b14">
+  <title>JABI | Creative Web Studio</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cur"></div>
+  <div id="cur-dot"></div>
+  <div id="progress"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="#hero" aria-label="العودة للرئيسية">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <strong>JABI</strong>
+          <span>Creative Web Studio</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle glass" aria-label="فتح القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="#hero">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#services">الخدمات</a>
+        <a href="#work">الأعمال</a>
+        <a href="#process">آلية العمل</a>
+        <a href="#blog">المدونة</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="badge"><span class="badge-dot"></span> تصميم رقمي متقدم للشركات والخدمات</div>
+          <h1 class="hero-title">
+            نحول فكرتك إلى <span class="gradient-text">واجهة رقمية</span><br>
+            <span class="type-line" id="typed-text"></span>
+          </h1>
+          
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">ابدأ مشروعك</a>
+            <a href="#work" class="btn btn-secondary">شاهد الأعمال</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric glass">
+              <strong data-count="24" data-suffix="+">0</strong>
+              <span>مشروعاً قابلاً للتخصيص</span>
+            </div>
+            <div class="metric glass">
+              <strong data-count="98" data-suffix="%">0</strong>
+              <span>تركيز على الأداء</span>
+            </div>
+            <div class="metric glass">
+              <strong data-count="7" data-suffix=" أيام">0</strong>
+              <span>بداية تنفيذ سريعة</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal">
+          <div class="hero-panel glass">
+            <div class="cube-shell">
+              <div style="margin-bottom: 40px;" class="cube-scene" id="cubeWrapper" aria-label="مكعب روبيك تفاعلي كامل" tabindex="0" >
+                <div class="cube-aura" aria-hidden="true"></div>
+                <div class="cube-viewport">
+                  <div class="cube-3d" id="cube3d"></div>
+                </div>
+              </div>
+
+              <div class="cube-toolbar">
+                <button class="cube-action glass" id="cubeScrambleBtn" type="button">خلط</button>
+                <button class="cube-action glass" id="cubeSolveBtn" type="button">ترتيب</button>
+              </div>
+              
+  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">عن الاستوديو</div>
+          <h2 class="section-title"> JABI بهوية <span>حديثة تواكب طموح المشاريع</span></h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="card glass reveal">
+            <div class="icon-box">✦</div>
+            <h3>حلول رقمية بهوية احترافية</h3>
+            <p>نصمم واجهات رقمية تركّز على الجودة، الوضوح، وسهولة الاستخدام، لنساعد المشاريع على تقديم خدماتها بشكل منظم، جذاب، وملائم لتوقعات العملاء.</p>
+            <ul class="check-list">
+              <li>عرض احترافي للخدمات والمحتوى</li>
+              <li>تصميم واضح وجذاب</li>
+              <li>تصميم قابل للتطوير مستقبلًا</li>
+            </ul>
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">الخدمات</div>
+          <h2 class="section-title">باقات مناسبة <span>للنشاطات الصغيرة والمتوسطة</span></h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="card glass package-card reveal">
+            <div class="icon-box">⚡</div>
+            <h3>الباقة الأساسية</h3>
+            <p>صفحة تعريفية احترافية للشركات الصغيرة أو مقدمي الخدمات الذين يحتاجون حضوراً رقمياً سريعاً.</p>
+            <div class="price"><strong>1,500</strong><span>ر.س / المشروع</span></div>
+            <ul class="check-list">
+              <li>صفحة هبوط احترافية</li>
+              <li>تصميم متجاوب بالكامل</li>
+              <li>قسم خدمات وتواصل</li>
+              <li>تهيئة أولية للسرعة</li>
+            </ul>
+          </article>
+
+          <article class="card glass package-card popular reveal">
+            <span class="package-badge">الأكثر طلباً</span>
+            <div class="icon-box">🚀</div>
+            <h3>الباقة المتقدمة</h3>
+            <p>مناسبة للشركات التي تريد موقعاً تعريفياً متعدد الأقسام مع أعمال، مدونة، وتجربة أكثر احترافية.</p>
+            <div class="price"><strong>3,750</strong><span>ر.س / المشروع</span></div>
+            <ul class="check-list">
+              <li>عدة أقسام وصفحات فرعية</li>
+              <li>ستايل تفاعلي حديث</li>
+              <li>تهيئة للمحتوى التسويقي</li>
+              <li>تسليم الكود المصدري كاملاً</li>
+            </ul>
+          </article>
+
+          <article class="card glass package-card reveal">
+            <div class="icon-box">🧩</div>
+            <h3>حل مخصص</h3>
+            <p>للجهات التي تحتاج هوية رقمية خاصة، أقسام إضافية، وربط عناصر مثل الواتساب أو النماذج أو نظام طلبات مخصص.</p>
+            <div class="price"><strong>حسب الطلب</strong><span>بعد دراسة الاحتياج</span></div>
+            <ul class="check-list">
+              <li>تحليل احتياج المشروع</li>
+              <li>تصميم UI مخصص</li>
+              <li>إضافة أقسام أو صفحات خاصة</li>
+              <li>دعم التوسع لاحقاً</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">آلية العمل</div>
+          <h2 class="section-title">خطوات التنفيذ <span>من الفكرة حتى التسليم</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-num">1</div>
+            <div class="card glass">
+              <h3>فهم النشاط والهدف</h3>
+              <p>جمع المعلومات الأساسية عن النشاط، الجمهور المستهدف، ونوع النتيجة المطلوبة من الموقع.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-num">2</div>
+            <div class="card glass">
+              <h3>اختيار الهيكل والتصميم</h3>
+              <p>تحديد الأقسام الأساسية، الأسلوب البصري، الرسائل التسويقية، وأولوية العناصر داخل الصفحة.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-num">3</div>
+            <div class="card glass">
+              <h3>التنفيذ والتوافق</h3>
+              <p>تطوير الواجهة، ضبط الاستجابة على الجوال، إضافة الحركات، ومراجعة الأداء العام للموقع.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-num">4</div>
+            <div class="card glass">
+              <h3>التسليم والتخصيص الأخير</h3>
+              <p>استبدال البيانات الوهمية ببياناتك النهائية، تعديل أزرار التواصل، وتسليم المشروع جاهزاً للنشر.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">المدونة</div>
+          <h2 class="section-title">مدونة رقمية <span>بأفكار حديثة ومحتوى مفيد</span></h2>
+          <p>نشارك فيها مقالات حول التصميم، المواقع، وتجربة الاستخدام لمساعدة المشاريع على الظهور بشكل أفضل.</p>
+         </div>
+
+        <div class="grid-3 blog-grid">
+          <a class="card glass reveal" href="post1_responsive_seo.html">
+            <div class="post-thumb"><img src="pic/num1.png"> </div>
+            <span class="post-tag">Responsive Design</span>
+            <h3>أهمية التصميم المتجاوب لتحسين الظهور الرقمي</h3>
+            <p>لماذا يؤثر توافق الجوال مباشرة على انطباع العميل، سرعة التصفح، وثقة المستخدم في الموقع؟</p>
+            <span class="read-link">قراءة المقال ←</span>
+          </a>
+
+          <a class="card glass reveal" href="post2_color_psychology.html">
+            <div class="post-thumb"><img src="pic/num2.png"></div>
+            <span class="post-tag">Color Strategy</span>
+            <h3>سيكولوجية الألوان في تصميم المواقع</h3>
+            <p>اختيار اللون لا يتعلق بالجمال فقط، بل يرتبط بالإحساس والثقة وإبراز الهوية التجارية.</p>
+            <span class="read-link">قراءة المقال ←</span>
+          </a>
+
+          <a class="card glass reveal" href="post3_open_source_advantage.html">
+            <div class="post-thumb"><img src="pic/num3.png"></div>
+            <span class="post-tag">Open Source</span>
+            <h3>لماذا يناسب HTML/CSS الشركات الصغيرة؟</h3>
+            <p>نظرة عملية على فائدة المواقع الخفيفة مفتوحة المصدر من ناحية التكلفة والمرونة وسهولة التسليم.</p>
+            <span class="read-link">قراءة المقال ←</span>
+          </a>
+        </div>
+
+        <div class="hero-actions" style="justify-content:center; margin-top: 24px;">
+          <a href="blog.html" class="btn btn-secondary">عرض جميع المقالات</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">تواصل</div>
+          <h2 class="section-title">تواصل معانا عبر الواتس اب  <span>او البريد الإلكتروني</span></h2>
+        </div>
+
+        <div class="contact-wrap">
+          <div class="contact-copy glass reveal">
+            <div class="contact-list" style="margin-bottom: 5%;">
+              <div class="contact-item">
+                <div class="icon-box">☎</div>
+                <div>
+                  <strong>واتساب</strong>
+                  <a href="https://wa.me/966591880896" target="_blank" rel="noopener">+966591880896</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon-box">✉</div>
+                <div>
+                  <strong>البريد</strong>
+                  <a href="mailto:ahmeddjpp@outlook.sa">ahmeddjpp@outlook.sa</a>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="contact-card glass reveal">
+            <h3>أرسل رسالة سريعة عبر واتساب</h3>
+            <p style="color: var(--muted); margin: 10px 0 18px;">هذا النموذج يفتح الواتساب مباشرة برسالة منسقة.</p>
+            <form id="contact-form">
+              <div class="field">
+                <label for="name">الاسم</label>
+                <input id="name" name="name" type="text" placeholder="اكتب اسمك">
+              </div>
+              <div class="field">
+                <label for="service">نوع الخدمة</label>
+                <input id="service" name="service" type="text" placeholder="مثال: تصميم موقع شركة">
+              </div>
+              <div class="field">
+                <label for="message">تفاصيل الطلب</label>
+                <textarea id="message" name="message" placeholder="اكتب وصفاً مختصراً لما تحتاجه"></textarea>
+              </div>
+              <div class="contact-actions">
+                <button class="btn btn-primary" href="https://wa.me/966591880896" type="submit" >فتح الواتساب</button>
+                <a class="btn btn-secondary" href="mailto:ahmedjpp@outloock.sa">إرسال بريد</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="currentYear"></span> JABI</p>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="blog.html">المدونة</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/966591880896" aria-label="واتساب" target="_blank" rel="noopener"><img src="icons/whatsapp_480px.png"></a>
+  <script src="script.js"></script>
+  <script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
