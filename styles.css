@@ -699,8 +699,7 @@ body.button-hover #cur {
   place-items: center;
   margin-bottom: 18px;
   font-size: 1.4rem;
-  background: linear-gradient(135deg, rgba(79,140,255,0.18), rgba(114,242,255,0.12));
-  border: 1px solid rgba(114,242,255,0.12);
+
 }
 
 .card h3 {
